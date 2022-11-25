@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,900;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
     <title>Document</title>
   </head>
   <body>
@@ -34,17 +38,116 @@
         src="./source-img/georgia-z-0StN_tFWOhc-unsplash.jpg"
         alt="main image"
       />
+      <img
+        class="header-image"
+        src="./source-img/luc-bercoth-4ykELaXgeOM-unsplash.jpg"
+        alt="main image"
+      />
       <div id="nav-icon">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <p class="resAddress">234 Richmond Street, N4W 7E3 London ON CA</p>
+      <span class="resAddress">234 Richmond Street, N4W 7E3 London ON CA</span>
     </section>
-    <section id="aboutus-res"></section>
-    <section id="aboutus-cef"></section>
-    <section id="menu"></section>
-    <section id="reservation"></section>
+    <section id="aboutus-res">
+      <div class="aboutus-res-bedge">
+        <img src="./contents/badge.jpeg" alt="badge image" />
+      </div>
+      <div class="aboutus-res-des">
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or
+        randomised words which don't look even slightly believable. If you are
+        going to use a passage of Lorem Ipsum, you need to be sure there isn't
+        anything embarrassing hidden in the middle of text. All the Lorem Ipsum.
+      </div>
+    </section>
+
+    <section id="aboutus-cef">
+      <div class="aboutus-cef-des">
+        <img src="./contents/background-black.jpg" alt="" />
+        <div class="aboutus-cef-des-container">
+          <h3>Chef Yuki</h3>
+          <p>
+            Yuki is dolor sit amet, consectetur adipisicing elit. Quaerat,
+            laudantium suscipit est asperiores nihil autem consequuntur
+            aspernatur fugiat porro Minima, culpa quos nulla reprehenderit odio
+            in perspiciatis Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Iusto dolor nulla illum earum architecto iste! Quia quis nisi
+            officiis recusandae
+          </p>
+
+          <table>
+            <tbody>
+              <tr>
+                <td style="width: 20%">2010</td>
+                <td style="width: 80%">Graduated from Tokyo University</td>
+              </tr>
+              <tr>
+                <td style="width: 20%">2017</td>
+                <td style="width: 80%">Head Chef at Hilton Hotel Tokyo</td>
+              </tr>
+              <tr>
+                <td style="width: 20%">2020</td>
+                <td style="width: 80%">2-Start Michelin Guide</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="aboutus-cef-img">
+        <img src="./source-img/thomas-marban-EHK-EH1SRzQ-unsplash.jpg" alt="" />
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="menu-container">
+        <h3>Sushi Menu</h3>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages and web
+          page editors now use Lorem Ipsum as their default model.
+        </p>
+        <button onclick="toggleCarteMenuModal()" >A la carte</button>
+        <button  onclick="toggleSetMenuModal()"> Set menu </button>
+    </section>
+    <section id="reservation">
+<div class="slider">
+    <div class="imgs">
+      <div class="img" style="left: 0;"> 
+      </div>
+      <div class="img">
+      </div>
+      <div class="img">
+      </div>
+      <div class="img">
+      </div>
+    </div>
+    <div class="dots"></div>
+  </div>
+  <div class="reservation-form">
+    <form action="">
+        <h3>Reservation</h3>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email">
+        <input type="date">
+        <input type="time">
+        <input type="number" placeholder="Number of people">
+        <input  type="text" placeholder="Message" style="height: 6em">
+<p><input type="checkbox"> Subscribe to our newsletter</p>
+
+<button>Reserve a table</button>
+        
+    </form>
+  </div>
+    </section>
     <section id="contact"></section>
+    <div class="menu-modal-carte" ><ion-icon name="close-outline" class="menu-modal-closeBtn" onclick="toggleCarteMenuModal()"></ion-icon></div>
+    <div class="menu-modal-set" > 
+    <ion-icon name="close-outline" class="menu-modal-closeBtn"  onclick="toggleSetMenuModal()"> </ion-icon>
+    </div>
   </body>
 </html>
