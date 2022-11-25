@@ -505,3 +505,35 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
+
+/* Contact Section */
+
+#contact {
+  height: var(--section-height);
+  background-image: url('./contents/contact_background.png');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-bottom: 2em;
+  font-size: 2em;
+}
+
+.contact-container p {
+  margin-bottom: 1em;
+}
+
+.contact-container a {
+  font-size: 1.8em;
+  color: black;
+  padding: 0.5em;
+}
+
+.contact-container a:visited {
+  color: black;
+}
