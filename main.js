@@ -1,9 +1,17 @@
 // Click event for burger menu
-
 const navBurger = document.querySelector('#nav-icon');
 navBurger.addEventListener('click', () => {
-  navBurger.classList.toggle('open');
+  toggleNavMenu();
 });
+
+const toggleNavMenu = () => {
+  const navContent = document.querySelector('.nav-content');
+  navBurger.classList.toggle('open');
+  navContent.classList.toggle('hidden');
+  navContent.classList.toggle('showNav');
+  navContent.classList.toggle('hideNav');
+  navContent.classList.toggle('animated');
+};
 
 // Header image slideshow
 let current = 0,
@@ -31,11 +39,9 @@ const toggleSetMenuModal = () => {
 // Image silder
 {
   const sliders = document.querySelectorAll('.slider');
-  // interval between switching images
-  // can't be less than your animation duration in css!
+
   const interval = 2800;
-  // if you don't want to first animation last longer than other animations
-  // set animDuration (in miliseconds) to your value of animation duration in css
+
   const animDuration = 600;
 
   for (let i = 0; i < sliders.length; ++i) {
@@ -66,11 +72,6 @@ const toggleSetMenuModal = () => {
       intrvl = setInterval(animateSlider, interval);
     }, interval - animDuration);
 
-    /**
-     * Animates images
-     * @param {number} [nextImg] - index of next image to show
-     * @param {boolean} [right = false] - animate to right
-     */
     function animateSlider(nextImg, right) {
       if (!nextImg) nextImg = currImg + 1 < sliderImgs.length ? currImg + 2 : 1;
 
@@ -108,4 +109,17 @@ const toggleSetMenuModal = () => {
   }
 }
 
-const navBtn = document.querySelector('#nav-icon');
+// Scroll into section
+
+const scrollInto = (section) => {
+  if (section === 'reservation') {
+    const toBeShownSection = document.querySelector('.reservation-form');
+    toBeShownSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else {
+    const toBeShownSection = document.querySelector(`#${section}`);
+
+    toBeShownSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  toggleNavMenu();
+};

@@ -83,6 +83,7 @@ img {
   transition: 0.5s ease-in-out;
   cursor: pointer;
   zoom: 50%;
+  z-index: 2;
 }
 
 #nav-icon span {
@@ -589,7 +590,7 @@ p {
 .line-betwen {
   width: 15%;
   height: 3px;
-  background-color: #f9b339;
+  background-color: #a4441c;
   position: relative;
   left: 42.5%;
   top: 80px;
@@ -608,7 +609,7 @@ p {
 }
 
 .social-list a:hover {
-  color: #f9b339;
+  color: #a4441c;
 }
 .nav {
   position: relative;
@@ -625,7 +626,6 @@ p {
   border: none;
   padding: 10px;
   cursor: pointer;
-  z-index: 99999;
 }
 
 .btn-nav:focus {
@@ -637,11 +637,11 @@ p {
   margin: 6px 0;
   width: 35px;
   height: 5px;
-  background-color: #f9b339;
+  background-color: #a4441c;
 }
 
 .btn-nav:hover .icon-bar {
-  background-color: #f9b339;
+  background-color: #a4441c;
 }
 
 .nav-content {
@@ -653,13 +653,12 @@ p {
   background-color: rgba(0, 0, 0, 0.9);
   display: block;
   height: 100%;
-  z-index: 9;
 }
 
 .below-line {
   width: 15%;
   height: 3px;
-  background-color: #f9b339;
+  background-color: #a4441c;
   position: relative;
   left: 42.5%;
   top: 40px;
@@ -685,23 +684,23 @@ p {
 
 .item-anchor {
   color: #fff;
-  font-size: 30px;
+  font-size: 1.5em;
   text-transform: uppercase;
   position: relative;
   text-decoration: none;
   padding: 10px;
-  letter-spacing: 15px;
+  letter-spacing: 0.5em;
 }
 
 .item-anchor:hover,
 .item-anchor:focus {
-  color: #f9b339;
+  color: #a4441c;
 }
 
 .item-anchor:hover:after,
 .item-anchor:focus:after {
   width: 100%;
-  background: #f9b339;
+  background: #a4441c;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -721,7 +720,7 @@ p {
 
 .animated:hover .icon-bar,
 .animated:focus .icon-bar {
-  background-color: #fca311;
+  background-color: #a4441c;
 }
 
 .animated:focus {
@@ -744,7 +743,7 @@ p {
 
 .animated .icon-bar {
   z-index: 999999;
-  background-color: #fca311;
+  background-color: #a4441c;
 }
 
 .animated .top {
