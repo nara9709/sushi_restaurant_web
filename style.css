@@ -288,6 +288,10 @@ p {
   transition: 300ms ease-in-out;
 }
 
+.menu-container button:visited {
+  color: black;
+}
+
 .menu-container button:hover {
   background-color: black;
   color: white;
@@ -301,10 +305,11 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  display: none;
-  transition-timing-function: ease-out;
+  visibility: hidden;
   overflow-y: scroll;
   z-index: 2;
+  opacity: 0;
+  transition: all 500ms;
 }
 
 .menu-modal-set {
@@ -314,9 +319,11 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  display: none;
+  visibility: hidden;
   overflow-y: scroll;
   z-index: 2;
+  opacity: 0;
+  transition: all 500ms;
 }
 
 .menu-modal-closeBtn {
@@ -330,7 +337,8 @@ p {
 }
 
 .active {
-  display: inline;
+  visibility: visible;
+  opacity: 1;
 }
 
 .menu-modal-container {

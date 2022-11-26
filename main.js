@@ -1,3 +1,5 @@
+'use strict';
+
 // Click event for burger menu
 const navBurger = document.querySelector('#nav-icon');
 navBurger.addEventListener('click', () => {
@@ -29,6 +31,7 @@ setInterval(function () {
 const toggleCarteMenuModal = () => {
   const modalCarte = document.querySelector('.menu-modal-carte');
   modalCarte.classList.toggle('active');
+  modalCarte.classList.toggle('fade');
 };
 
 const toggleSetMenuModal = () => {
@@ -73,6 +76,9 @@ const toggleSetMenuModal = () => {
     }, interval - animDuration);
 
     function animateSlider(nextImg, right) {
+      let currDot;
+      let prevDot;
+
       if (!nextImg) nextImg = currImg + 1 < sliderImgs.length ? currImg + 2 : 1;
 
       --nextImg;
