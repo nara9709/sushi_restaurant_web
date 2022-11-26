@@ -94,10 +94,6 @@ const toggleSetMenuModal = () => {
       prevDot.classList.remove('active-dot');
     }
 
-    /**
-     * Decides if animate to left or right and highlights clicked dot
-     * @param {number} num - index of clicked dot
-     */
     function dotClick(num) {
       if (num == currImg) return false;
 
@@ -111,3 +107,5 @@ const toggleSetMenuModal = () => {
     }
   }
 }
+
+const navBtn = document.querySelector('#nav-icon');
