@@ -279,6 +279,7 @@ p {
 
 .menu-container button {
   font-size: 0.9em;
+  text-decoration: none;
   text-transform: uppercase;
   background-color: transparent;
   outline: none;
@@ -578,7 +579,7 @@ p {
 }
 
 .contact-container a {
-  font-size: 1.8em;
+  text-decoration: none;
   color: black;
   padding: 0.5em;
 }
