@@ -296,6 +296,7 @@ p {
 }
 
 .menu-container button:hover {
+  cursor: pointer;
   background-color: black;
   color: white;
 }
@@ -607,21 +608,6 @@ p {
   top: 80px;
 }
 
-.social-list li {
-  display: inline;
-  text-align: center;
-  font-size: 40px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.social-list a {
-  color: #fff;
-}
-
-.social-list a:hover {
-  color: #a4441c;
-}
 .nav {
   position: relative;
   width: auto;
@@ -641,14 +627,6 @@ p {
 
 .btn-nav:focus {
   outline: 0;
-}
-
-.icon-bar {
-  display: block;
-  margin: 6px 0;
-  width: 35px;
-  height: 5px;
-  background-color: #a4441c;
 }
 
 .btn-nav:hover .icon-bar {
@@ -705,6 +683,7 @@ p {
 
 .item-anchor:hover,
 .item-anchor:focus {
+  cursor: pointer;
   color: #a4441c;
 }
 
