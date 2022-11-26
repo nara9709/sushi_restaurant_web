@@ -57,6 +57,7 @@ img {
   color: white;
   font-size: 2em;
   font-weight: 500;
+  text-transform: uppercase;
   letter-spacing: 0.2em;
   padding-left: var(--section-left-padding);
   padding-top: var(--section-top-padding);
@@ -864,4 +865,85 @@ p {
 
 .hidden {
   display: none;
+}
+
+/* Web screen */
+
+@media only screen and (min-width: 1060px) {
+  :root {
+    --section-width: 100%;
+  }
+
+  section {
+    width: var(--section-width);
+  }
+
+  /* Header */
+
+  #header img {
+    width: var(--section-width);
+  }
+
+  /* About us */
+
+  #aboutus-res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutus-res-bedge {
+    width: 50%;
+  }
+
+  .aboutus-res-des {
+    width: 50%;
+  }
+
+  #aboutus-cef {
+    display: flex;
+  }
+
+  .aboutus-cef-des {
+    width: 50%;
+  }
+
+  .aboutus-cef-img {
+    width: 50%;
+  }
+
+  .aboutus-cef-des-container {
+    margin-top: 10em;
+    width: 50%;
+  }
+
+  /* Menu */
+
+  .menu-container h3 {
+    margin-top: 1em;
+  }
+
+  .menu-container p {
+    margin: auto;
+    margin-bottom: 7em;
+    width: 50%;
+  }
+
+  .menu-container button {
+    margin-right: 2em;
+  }
+
+  /* Reservation */
+
+  #reservation {
+    display: flex;
+  }
+
+  .slider {
+    width: 50%;
+  }
+
+  .reservation-form {
+    width: 50%;
+  }
 }
