@@ -278,6 +278,7 @@ p {
 }
 
 .menu-container button {
+  color: black;
   font-size: 0.9em;
   text-decoration: none;
   text-transform: uppercase;
